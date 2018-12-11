@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <table style="font-family:Arial">
+    <tr>
+        <td colspan="2" style="width:800px; height:80px; background-color:#FFFFFF; 
+            text-align:center">
+            <h1 style="background-color: #FFFFFF">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/h2-820x250.jpg" 
+                    Width="529px" />
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="height:500px; background-color:#f5f5dc; width:150px">
+            <p style="background-color: #f5f5dc">
+                <asp:HyperLink ID="HyperLink1" runat="server" style="font-weight: 700" 
+                    NavigateUrl="~/home.aspx">HOME</asp:HyperLink>
+            </p>
+            <p style="background-color: #f5f5dc">
+                <asp:HyperLink ID="HyperLink2" runat="server" style="font-weight: 700" 
+                    NavigateUrl="~/login.aspx">LOGIN</asp:HyperLink>
+            </p>
+            <p style="background-color: #f5f5dc">
+                <asp:HyperLink ID="HyperLink3" runat="server" style="font-weight: 700" 
+                    NavigateUrl="~/Registration.aspx">REGISTER</asp:HyperLink>
+            </p>
+            <p style="background-color: #f5f5dc">
+                <asp:HyperLink ID="HyperLink4" runat="server" style="font-weight: 700" 
+                    NavigateUrl="~/facilities.aspx">FACILITIES</asp:HyperLink>
+            </p>
+            <p style="background-color: #f5f5dc">
+                <asp:HyperLink ID="HyperLink5" runat="server" style="font-weight: 700" 
+                    NavigateUrl="~/rules.aspx">RULES</asp:HyperLink>
+            </p>
+        </td>
+        <td style="height:500px; background-color:#f5f5dc; width:650px">
+             
+                 <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </td>
+    </tr>
+</table>
+    
+    </form>
+</body>
+</html>
